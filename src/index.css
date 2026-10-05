@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Oswald", "Arial Narrow", sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-red: #8e1215;
+  --color-brand-red-dark: #6d0d10;
+  --color-brand-red-bright: #a8171b;
+  --color-ink: #0b0b0c;
+  --color-ink-soft: #141416;
+  --color-bone: #f5f3f0;
+  --color-stone: #e4e0da;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #0b0b0c;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+}
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8125rem;
+  padding: 1rem 1.9rem;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+}
+
+.btn-red {
+  background: var(--color-brand-red);
+  color: #fff;
+}
+.btn-red:hover {
+  background: var(--color-brand-red-dark);
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #fff;
+}
+.btn-outline-light:hover {
+  background: #fff;
+  color: #0b0b0c;
+  border-color: #fff;
+}
+
+.btn-outline-dark {
+  border-color: rgba(11, 11, 12, 0.3);
+  color: #0b0b0c;
+}
+.btn-outline-dark:hover {
+  background: #0b0b0c;
+  color: #fff;
+  border-color: #0b0b0c;
+}
+
+.hairline {
+  border-color: rgba(11, 11, 12, 0.12);
+}
+
+::selection {
+  background: var(--color-brand-red);
+  color: #fff;
+}
